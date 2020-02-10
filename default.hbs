@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{@site.title}}</title>
+        <script src="{{asset "assets/js/jquery.min.js"}}"></script>
+       <script src="{{asset "assets/js/bootstrap.bundle.min.js"}}"></script> 
+     <link rel="stylesheet" type="text/css" href="{{asset 'assets/css/main.min.css'}}" />
+
+    {{ghost_head}} <!--Añade metadatos y SEO-->
+</head>
+<body class="{{body_class}}">
+    {{{body}}} <!--Contenidos dentro de la plantilla-->
+    {{ghost_foot}} <!--Añade otros scripts importantes-->
+    
+</body>
+</html>

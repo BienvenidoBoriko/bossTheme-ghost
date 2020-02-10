@@ -1,0 +1,54 @@
+<section class="container row mt-2 pt-3">
+<section class="col">
+    <h5 class="h5">ENTRADAS RECIENTES</h5>
+    {{#get "posts" limit="3"}}
+    {{#foreach posts }}
+        <div class="text-dark card mb-3" style="max-width: 390px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src={{feature_image}} class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h6 class="card-title">{{title}} </h6>
+                        <p class="card-text"><small class="text-muted">{{date published_at format="MMMM DD, YYYY"}}</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+  {{/foreach}}
+  {{/get}}
+</section>
+<section class="col">
+    <h5 class="h5">ETIQUETAS</h5>
+    {{#get "tags"}}
+        {{#foreach tags}}
+         <a href="{{url}}" title="{{name}}" class="btn btn-secondary btn-sm tag tag-{{id}} {{slug}}">{{name}}</a>
+        {{/foreach}}
+     {{/get}}      
+</section>
+<section class="col">
+    <h5 class="h5">SUSCRIBETE</h5>
+<p>Obtenga nuestros articulos mas recientes en su correo</p>
+<form action="" method="" class="form-inline">
+  <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Tu Email" aria-label="Recipient's email" aria-describedby="button-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-sm btn-primary" type="button" id="button-addon2">SUSCRIBETE</button>
+  </div>
+</div>
+</form>
+
+<h4>Follow Us</h4>
+<div class="social-links row">
+    {{#if @site.facebook}}
+    <a class="rounded-circle col" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank"
+        rel="noopener">{{> "icons/facebook"}}</a>
+    {{/if}}
+    {{#if @site.twitter}}
+    <a class="rounded-circle col" href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank"
+        rel="noopener">{{> "icons/twitter"}}</a>
+    {{/if}}
+</div>
+</section>
+</section>

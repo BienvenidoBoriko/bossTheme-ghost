@@ -1,0 +1,12 @@
+{{!< default}}
+<nav>{{navigation}}</nav>
+{{#post}}
+
+    {{> post/post-header}}
+
+    <article class="{{post_class}} container">
+        {{content}}
+    </article>
+    
+{{/post}}
+{{>footer}}

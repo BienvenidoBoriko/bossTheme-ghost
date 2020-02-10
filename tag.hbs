@@ -1,0 +1,16 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+<nav>{{navigation}}</nav>
+{{#tag}}
+{{> "tag/tag-header"}}
+{{/tag}}
+
+{{!-- The main content area --}}
+<main id="site-main" class="site-main outer">
+    <div class="inner posts">
+        <div class="post-feed row">
+            {{> "post/post-loop"}}
+        </div>
+    </div>
+</main>
+{{> "footer"}}

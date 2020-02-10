@@ -1,0 +1,13 @@
+{{!< default}} <!--Usa la "plantilla" default.hbs-->
+<nav>{{navigation}}</nav>
+<header class="site-home-header"> {{> "header" }} </header>
+<main role="main">
+  <div class="container-fluid">
+    <article class="row ">
+      {{> "post/post-loop"}}
+    </article>
+  </div>
+
+{{pagination}}
+</main>
+{{> "footer"}}

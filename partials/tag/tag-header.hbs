@@ -1,0 +1,21 @@
+<header class="site-archive-header">
+    <div class="card bg-dark text-white">
+        {{#if feature_image}}
+        <img src="{{feature_image}}" class="card-img" alt="imagen de fondo">
+        {{else}}
+        <img src="{{asset "assets/images/tag-bg.jpeg"}}" class="card-img" alt="imagen de fondo">
+        {{/if}}
+        <div class="card-img-overlay">
+            <div class="inner site-header-content">
+                <h1 class="site-title card-title">Etiqueta:{{name}}</h1>
+                <h2 class="site-description card-text">
+                    {{#if description}}
+                    {{description}}
+                    {{else}}
+                    A collection of {{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}}
+                    {{/if}}
+                </h2>
+            </div>
+        </div>
+    </div>
+</header>

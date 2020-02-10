@@ -1,0 +1,27 @@
+{
+    "name": "boss-theme",
+    "version": "1.0.0",
+    "description": "proyecto crear un tema para ghost",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "boss"
+    ],
+    "author": "Bienvenido Boriko",
+    "license": "GPL-3.0",
+    "dependencies": {
+        "bootstrap": "^4.4.1",
+        "jquery": "^3.4.1"
+    },
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-dart-scss": "^1.0.3",
+        "gulp-pleeease": "^2.0.2",
+        "gulp-rename": "^2.0.0",
+        "gulp-util": "^3.0.8"
+    }
+}
