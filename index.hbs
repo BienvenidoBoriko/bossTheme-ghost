@@ -1,9 +1,9 @@
 {{!< default}} <!--Usa la "plantilla" default.hbs-->
-<nav>{{navigation}}</nav>
-<header class="site-home-header"> {{> "header" }} </header>
+{{navigation}}
+<header class="site-home-header ml-1 mr-1 mt-4 pt-5"> {{> "header" }} </header>
 <main role="main">
   <div class="container-fluid">
-    <article class="row justify-content-center">
+    <article class="row justify-content-center mt-2 mb-3">
       {{> "post/post-loop"}}
     </article>
   </div>
