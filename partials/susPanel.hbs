@@ -1,5 +1,5 @@
-<section class=" row mt-2 pt-3 justify-content-center">
-<section class="col">
+<section class="row mt-2 pt-3 justify-content-center">
+<section class="col-sm-12 col-md-3">
     <h5 class="h5">ENTRADAS RECIENTES</h5>
     {{#get "posts" limit="3"}}
     {{#foreach posts }}
@@ -19,7 +19,7 @@
   {{/foreach}}
   {{/get}}
 </section>
-<section class="col">
+<section class="col-sm-12 col-md-3">
     <h5 class="h5">ETIQUETAS</h5>
     {{#get "tags"}}
         {{#foreach tags}}
@@ -27,7 +27,7 @@
         {{/foreach}}
      {{/get}}      
 </section>
-<section class="col">
+<section class="col-sm-12 col-lg-4 col-md-3">
     <h5 class="h5">SUSCRIBETE</h5>
 <p>Obtenga nuestros articulos mas recientes en su correo</p>
 <form action="" method="" class="form-inline">
