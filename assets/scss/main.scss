@@ -1,6 +1,8 @@
 $border-radius: 10px;
 $navbar-light-color: #161616;
-
+$nav-current-item-color: #4eb052;
+$navbar-light-color: #ffffff;
+$navbar-light-hover-color: #4eb052;
 @import "../../node_modules/bootstrap/scss/bootstrap";
 // @import "../../node_modules/bootstrap/scss/functions";
 //@import "../../node_modules/bootstrap/scss/variables";
@@ -11,8 +13,12 @@ $navbar-light-color: #161616;
 //@import "../../node_modules/bootstrap/scss/buttons";
 //@import "../../node_modules/bootstrap/scss/alert";
 //@import "../../node_modules/bootstrap/scss/navbar"; 
-img.d-block.w-100,img.card-img{
+img.d-block.w-100,img.card-img {
     max-height: 400px;
+}
+
+.navbar-light .navbar-nav .nav-current .nav-link {
+    color: $nav-current-item-color;
 }
 
 

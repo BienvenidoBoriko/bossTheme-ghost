@@ -9,9 +9,9 @@
   {{#foreach posts}}
     <div class="carousel-item {{#if @first}}active{{/if}}">
       <a href="{{url}}"><img src={{feature_image}} class="d-block w-100" alt="..."></a>
-      <div class="carousel-caption d-none d-md-block">
-        <h5><a href="{{url}}"> {{title}} </a></h5>
-        <p><a href="{{url}}">{{excerpt}}</a></p>
+      <div class="carousel-caption d-none d-md-block ">
+        <h1 class="text-light"><a class="text-light" href="{{url}}"> {{title}} </a></h5>
+        <p><a class="text-light" href="{{url}}">{{excerpt}}</a></p>
       </div>
     </div>
   {{/foreach}}

@@ -1,15 +1,20 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
-  <div class="navbar-brand" >
-    <a href="{{@site.url}}"> <img style="max-height: 43px;" class="" src="{{@site.logo}}" alt=""></a>
-    </div>
+  <div class="navbar-brand ml-5 mr-5" >
+    {{#if @site.logo}}
+      <a href="{{@site.url}}"> <img style="max-height: 43px; max-width:113px" class="" src="{{@site.logo}}" alt=""></a>
+    {{else}}
+      <a class="text-light" href="{{@site.url}}">{{@site.title}}</a>
+    {{/if}}
+    
+  </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav nav">
+    <ul class="navbar-nav nav w-70">
         {{#foreach navigation}}
-        <li class="nav-{{slug}}{{#if current}} nav-item  nav-current{{/if}}"><a class="nav-link" href="{{url absolute="true"}}">{{label}}</a></li>
+        <li class="nav-{{slug}}{{#if current}}  nav-current{{/if}} nav-item"><a class="nav-link text-uppercase mr-2" href="{{url absolute="true"}}">{{label}}</a></li>
         {{/foreach}}
     </ul>
   </div>
