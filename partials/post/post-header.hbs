@@ -1,8 +1,10 @@
-<div class="card bg-dark text-white">
-  <img src="{{feature_image }}" class="card-img" alt="...">
-  <div class="card-img-overlay">
-    <h5 class="card-title">{{title}}</h5>
-    <p class="card-text">{{excerpt}}</p>
-    <p class="card-text">{{date published_at format="MMMM DD, YYYY"}}</p>
+<header class="ml-1 mr-1 mt-4 pt-5">
+  <div class="card">
+    <img src="{{feature_image }}" class="card-img" alt="...">
+    <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+      <h5 class="card-title">{{title}}</h5>
+      <p class="card-text">{{excerpt}}</p>
+      <p class="card-text">{{date published_at format="MMMM DD, YYYY"}}</p>
+    </div>
   </div>
-</div>
+</header>

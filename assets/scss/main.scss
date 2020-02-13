@@ -3,6 +3,20 @@ $navbar-light-color: #161616;
 $nav-current-item-color: #4eb052;
 $navbar-light-color: #ffffff;
 $navbar-light-hover-color: #4eb052;
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$sizes: map-merge(
+  (
+    10: 10%,
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto
+  ),
+  $sizes
+);
 @import "../../node_modules/bootstrap/scss/bootstrap";
 // @import "../../node_modules/bootstrap/scss/functions";
 //@import "../../node_modules/bootstrap/scss/variables";
@@ -50,5 +64,11 @@ img.card-img {
     height: 100%;
     margin-top: 1.2em;
     margin-bottom: 1.2em;
+
+}
+
+
+
+.author-profile-image {
 
 }
