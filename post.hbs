@@ -2,14 +2,16 @@
 <nav>{{navigation}}</nav>
 {{#post}}
 
-{{> post/post-header}}
-<section class="container">
+{{!-- {{> post/post-header}} --}}
+<section class="container-xl">
     <header>
-        <img src="..." class="img-fluid" alt="Responsive image">
+        <img src="{{feature_image }}" class="img-fluid" alt="Responsive image">
     </header>
-    <article class="{{post_class}} small-container mt-3">
+    <article class="{{post_class}} container-sm mt-3">
         {{content}}
     </article>
+  
+    
 </section>
 
 {{/post}}
