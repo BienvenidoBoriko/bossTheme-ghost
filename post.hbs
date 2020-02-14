@@ -2,12 +2,15 @@
 <nav>{{navigation}}</nav>
 {{#post}}
 
-    {{> post/post-header}}
-
-    <article class="{{post_class}} container mt-3">
-
-        {{content}} 
+{{> post/post-header}}
+<section class="container">
+    <header>
+        <img src="..." class="img-fluid" alt="Responsive image">
+    </header>
+    <article class="{{post_class}} small-container mt-3">
+        {{content}}
     </article>
-    
+</section>
+
 {{/post}}
 {{>footer}}
