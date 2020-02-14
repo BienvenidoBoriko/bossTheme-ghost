@@ -3,15 +3,37 @@
 {{#post}}
 
 {{!-- {{> post/post-header}} --}}
-<section class="container-xl">
-    <header>
-        <img src="{{feature_image }}" class="img-fluid" alt="Responsive image">
+<section class="container">
+    <header class="mt-5 pt-5 ">
+        <img src="{{feature_image }}" class="img-fluid w-100 img-post" alt="Responsive image">
     </header>
     <article class="{{post_class}} container-sm mt-3">
-        {{content}}
+        <header class="d-flex flex-column mt-3 mb-3">
+            <div class="tags mt-2 mb-2">
+                {{#if tags}}
+                    {{#foreach tags}}
+                    <a href="{{url}}" title="{{name}}" class="tag btn-sm btn-primary tag-{{id}} {{slug}}">{{name}}</a>
+                    {{/foreach}}
+                {{/if}}
+            </div>
+            <h1 class="text-body">{{title}}</h1>
+            <div class="author-date w-50 d-flex flex-row align-items-center">
+                <div class="autor w-50">
+                    <img class="author-img rounded-circle" src="{{primary_author.profile_image}}" alt="imagen del autor">
+                    <span class="author-name text-muted"><a href=" {{primary_author.url}} ">{{primary_author.name}}</a></span> -
+                    <time class="post-date text-muted" datetime="{{date published_at format='YYYY-MM-DD'}}">
+                     {{date published_at format="MMMM DD, YYYY"}}
+                    </time>
+                </div>
+            </div>
+        </header>
+        <section class="text-dark mt-5 mb-5">
+            {{content}}
+        </section>
+        
     </article>
-  
-    
+
+
 </section>
 
 {{/post}}
