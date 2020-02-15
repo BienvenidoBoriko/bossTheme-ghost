@@ -29,6 +29,10 @@ $sizes: map-merge(
 //@import "../../node_modules/bootstrap/scss/alert";
 //@import "../../node_modules/bootstrap/scss/navbar";
 
+.nav-current.nav-item .nav-link {
+  color: $nav-current-item-color;
+}
+
 //limite del ancho de todas las imagenes
 img.d-block.w-100,
 img.card-img,
