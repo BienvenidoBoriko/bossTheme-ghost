@@ -7,11 +7,10 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [
-        "ghost",
+        "ghost-theme",
         "theme",
         "boss"
     ],
-    "author": "Bienvenido Boriko",
     "license": "GPL-3.0",
     "dependencies": {
         "bootstrap": "^4.4.1",
@@ -27,5 +26,13 @@
     "config": {
         "posts_per_page": 6,
         "image_sizes": {}
+    },
+    "engines": {
+        "ghost-api": "v3"
+    },
+
+    "author": {
+        "email": "bienvenidoborico@gmail.com",
+        "name": "Bienvenido Boriko"
     }
 }
