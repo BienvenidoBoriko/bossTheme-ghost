@@ -12,5 +12,5 @@
 ![home2](assets/images/home2.png "index2")
 ![author](assets/images/author.png "author")
 ![post](assets/images/post.png "post")
-![tag](assets/images/tag.png"tag")
+![tag](assets/images/tag.png "tag")
 
