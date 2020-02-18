@@ -30,7 +30,6 @@
     "engines": {
         "ghost-api": "v3"
     },
-
     "author": {
         "email": "bienvenidoborico@gmail.com",
         "name": "Bienvenido Boriko"
