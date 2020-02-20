@@ -1,4 +1,4 @@
-<div id="carouselExampleCaptions" class="carousel slide container p-0 mt-3 border border-secondary data-ride="carousel">
+<div id="carouselExampleCaptions" class="carousel slide p-0 mt-3 border border-secondary data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -11,7 +11,7 @@
       <a href="{{url}}"><img src={{feature_image}} class=" d-block w-100 card-img" alt="..."></a>
       <div class="carousel-caption d-none d-md-block ">
         <h1 class="text-body"><a class="text-body" href="{{url}}"> {{title}} </a></h5>
-        <p><a class="text-body" href="{{url}}">{{excerpt}}</a></p>
+        <p><a class="text-body" href="{{url}}">{{excerpt words="10"}}</a></p>
       </div>
     </div>
   {{/foreach}}
