@@ -1,46 +1,51 @@
 <header class="site-archive-header ml-1 mr-1 mt-4 pt-5">
-<div class="card bg-dark text-white">
-  {{#if cover_image}}  
-    <img src="{{cover_image}}" class="card-img img-opc-50" alt="imagen de fondo">
-  {{else}}
-    <img src="{{asset "assets/images/cover-bg.jpg"}}" class="card-img img-opc-50" alt="imagen de fondo">
-  {{/if}}
-  <div class="card-img-overlay">
- 
+    <div class="card bg-dark text-white">
+        {{#if cover_image}}
+        <img src="{{cover_image}}" class="card-img img-opc-50" alt="imagen de fondo">
+        {{else}}
+        <img src="{{asset "assets/images/cover-bg.jpg"}}" class="card-img img-opc-50" alt="imagen de fondo">
+        {{/if}}
+        <div class="card-img-overlay">
 
-   {{!--Special header-image.hbs partial to generate the background image--}}
-        <div class="inner">
-            <div class="site-header-content author-header d-flex flex-column justify-content-center align-items-center">
-                {{#if profile_image}}
-                    <img class="author-profile-image rounded-circle border border-white rounded-circle w-10 h-10" src="{{profile_image}}" alt="{{name}}" />
-                {{/if}}
-                <div class="author-header-content text-center">
-                    <h1 class="site-title">{{name}}</h1>
-                    {{#if bio}}
-                        <h2 class="author-bio">{{bio}}</h2>
+
+            {{!--Special header-image.hbs partial to generate the background image--}}
+            <div class="inner">
+                <div
+                    class="site-header-content author-header d-flex flex-column justify-content-center align-items-center">
+                    {{#if profile_image}}
+                    <img class="author-profile-image rounded-circle border border-white rounded-circle w-10 h-10"
+                        src="{{profile_image}}" alt="{{name}}" />
                     {{/if}}
-                    <div class="author-meta">
-                        {{#if location}}
+                    <div class="author-header-content text-center">
+                        <h1 class="site-title">{{name}}</h1>
+                        {{#if bio}}
+                        <h2 class="author-bio">{{bio}}</h2>
+                        {{/if}}
+                        <div class="author-meta">
+                            {{#if location}}
                             <div class="author-location">{{location}}</div>
-                        {{/if}}
-                        <div class="author-stats">
-                            {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}
+                            {{/if}}
+                            <div class="author-stats">
+                                {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}
+                            </div>
+                            {{#if website}}
+                            <span class="author-social-link"><a href="{{website}}" target="_blank"
+                                    rel="noopener">Website</a></span>
+                            {{/if}}
+                            {{#if twitter}}
+                            <span class="author-social-link"><a href="{{twitter_url}}" target="_blank"
+                                    rel="noopener">Twitter</a></span>
+                            {{/if}}
+                            {{#if facebook}}
+                            <span class="author-social-link"><a href="{{facebook_url}}" target="_blank"
+                                    rel="noopener">Facebook</a></span>
+                            {{/if}}
                         </div>
-                        {{#if website}}
-                            <span class="author-social-link"><a href="{{website}}" target="_blank" rel="noopener">Website</a></span>
-                        {{/if}}
-                        {{#if twitter}}
-                            <span class="author-social-link"><a href="{{twitter_url}}" target="_blank" rel="noopener">Twitter</a></span>
-                        {{/if}}
-                        {{#if facebook}}
-                            <span class="author-social-link"><a href="{{facebook_url}}" target="_blank" rel="noopener">Facebook</a></span>
-                        {{/if}}
                     </div>
                 </div>
             </div>
+
+
         </div>
     </div>
-
-  </div>
-</div>
 </header>

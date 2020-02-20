@@ -1,16 +1,14 @@
 
-    <nav class="Page navigation example mt-5 mb-5" role="navigation ">
+    <nav class="Page navigation example mt-5 mb-5" >
         <ul class="pagination justify-content-center ">
             {{#if prev}}
         <li class="page-item"><a class="page-link previous newer-posts" href="{{page_url prev}}">Newer Posts</a></li>
         {{else}}
-        <div class="spacer"></div>
         {{/if}}
         <li class="page-item disabled"><span class="page-link page-number">Page {{page}} of {{pages}}</span></li>
         {{#if next}}
         <li class="page-item"><a class="page-link  page next older-posts" href="{{page_url next}}">Older Posts</a></li>
         {{else}}
-        <div class="spacer"></div>
         {{/if}}
         </ul>
         

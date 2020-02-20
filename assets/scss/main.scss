@@ -101,6 +101,56 @@ pre {
   }
 }
 
+//carousel
+.panel {
+	width: 40vw;
+  height: 100%;
+  left:0;
+	opacity: 0.9;
+	color: $white;
+	box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
+	transition: background 500ms ease-in-out;
+	.panel-header,
+	.panel-info {
+		margin: 0;
+		padding: 1.3rem 3.5rem;
+	}
+.panel-header {
+		padding-top: 2em;
+		font: {
+			weight: normal;
+			size: 2.5rem;
+		}
+		text-transform: capitalize;
+	}
+	.panel-info {
+		font: {
+			size: 1.2rem;
+		}
+		line-height: 1.8em;
+	}
+	.panel-button {
+		margin: 1.3rem 3.5rem;
+		padding: 0.8em 1.3em;
+		background: none;
+		border: 1px solid $white;
+		color: $white;
+		cursor: pointer;
+		font: {
+			family: 'Montserrat';
+			size: 0.8rem;
+			weight: 700;
+		}
+		text-transform: uppercase;
+		transition: box-shadow 0.5s ease-in-out, color 0.5s ease-in-out;
+		&:hover {
+			box-shadow: inset 0 0 1.5em 1.5em $white;
+		}
+		&:focus {
+			outline: none;
+		}
+	}
+}
 
 //<figure> and <figcaption>
 
