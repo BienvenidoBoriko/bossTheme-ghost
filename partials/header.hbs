@@ -9,9 +9,10 @@
   {{#foreach posts}}
     <div class="carousel-item {{#if @first}}active{{/if}}">
       <a href="{{url}}"><img src={{feature_image}} class="d-block w-100 card-img" alt="..."></a>
-      <div class="carousel-caption d-none d-md-block panel" style="background: rgb(36, 40, 70) none repeat scroll 0% 0%;">
-        <h1 class="text-body panel-header"><a class="text-body" href="{{url}}"> {{title}} </a></h1>
-        <p><a class="text-body panel-info" href="{{url}}">{{excerpt}}</a></p>
+      <div class="carousel-caption flex-column align-items-center d-flex  pt-5 panel" style="background: rgb(36, 40, 70) none repeat scroll 0% 0%;">
+        <h1 class="panel-header ">{{title}} </h1>
+        <p class=" panel-info text-light"> {{excerpt words="10"}}...</p>
+        <a class="btn btn-outline-secondary text-light"  href="{{url}}" class="">Leer Mas</a>
       </div>
     </div>
   {{/foreach}}
