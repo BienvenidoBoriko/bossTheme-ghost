@@ -1,5 +1,6 @@
 
 $primary: #4eb052;
+$dark: #2c3e50;
 $navbar-light-color: #161616;
 $nav-current-item-color: #4eb052;
 $navbar-light-color: #ffffff;
@@ -20,14 +21,24 @@ $sizes: map-merge(
 );
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
-// @import "../../node_modules/bootstrap/scss/functions";
+ //@import "../../node_modules/bootstrap/scss/functions";
 //@import "../../node_modules/bootstrap/scss/variables";
 //@import "../../node_modules/bootstrap/scss/mixins";
+//@import "../../node_modules/bootstrap/scss/utilities";
+//@import "../../node_modules/bootstrap/scss/navbar";
 
 //@import "../../node_modules/bootstrap/scss/reboot";
 //@import "../../node_modules/bootstrap/scss/buttons";
 //@import "../../node_modules/bootstrap/scss/alert";
 //@import "../../node_modules/bootstrap/scss/navbar";
+//@import "../../node_modules/bootstrap/scss/card";
+//@import "../../node_modules/bootstrap/scss/carousel";
+//@import "../../node_modules/bootstrap/scss/pagination";
+//@import "../../node_modules/bootstrap/scss/forms";
+
+body {
+  background-color: rgba(208, 228, 199, 0.133);
+}
 
 .nav-current.nav-item .nav-link {
   color: $nav-current-item-color;
@@ -154,12 +165,14 @@ pre {
 
 //<figure> and <figcaption>
 
-.kg-width-wide img,.kg-image {
-  max-width: 85vw;
+.kg-width-wide img {
+  max-width: 80%;
 }
 
-.kg-width-full img {
-  max-width: 100vw;
+
+
+.kg-width-full img,.kg-image,.kg-width-wide .kg-gallery-image img {
+  max-width: 100%;
 }
 
  figure {

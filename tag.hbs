@@ -1,6 +1,6 @@
 {{!< default}}
 {{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
-<nav>{{navigation}}</nav>
+{{navigation}}
 {{#tag}}
 {{> "tag/tag-header"}}
 {{/tag}}
@@ -13,4 +13,5 @@
         </div>
     </div>
 </main>
+{{pagination}}
 {{> "footer"}}
